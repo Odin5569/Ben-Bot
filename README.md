@@ -9,4 +9,6 @@
 5. Install DiscordJS ```npm i discord.js```
 6. Install the DiscordJS Voice libary ```npm i @discordjs/voice```
 
+You must change the TOKEN in the index.js file!
+**You can change everything on the TOP in the index file**
 **Now you can run the bot with** `node index.js`
