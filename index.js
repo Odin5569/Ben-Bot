@@ -11,12 +11,11 @@ const client = new Client({
 });
 
 
-// Configs für dich:
-const TOKEN = 'MTIzMzQwOTQ2NzUzODg3MDI4NQ.GtWWDf.15Dl390GzB2Ie4wfToDqPRfCG8YHf7BMPBviyM' // Einfach Token ersetzen
-const PREFIX = '!' // Änder einfach den Prefix zu irgendwas wie / oder !
-const ADMIN = 'Odin' // Dein Discord Anzeigename
-
-// Befehle:
+// Configs:
+const TOKEN = 'INSERT TOKEN HERE'
+const PREFIX = '!'
+const ADMIN = 'Odin'
+// Commands:
 const RANDOMBEN = "ben"
 const PURGE = 'purge'
 const FORCESTOP = "forcestop"
@@ -52,7 +51,7 @@ client.on('messageCreate', async (message) => {
                 const embed = new EmbedBuilder()
                 .setColor('Red')
                 .setTitle('Ben')
-                .setDescription('Ben sagt: **NO**')
+                .setDescription('Ben says: **NO**')
 
                 message.channel.send({ embeds: [embed] })
 
@@ -63,7 +62,7 @@ client.on('messageCreate', async (message) => {
                 const embed = new EmbedBuilder()
                 .setColor('Green')
                 .setTitle('Ben')
-                .setDescription('Ben sagt: **YES**')
+                .setDescription('Ben says: **YES**')
 
                 message.channel.send({ embeds: [embed] })
 
@@ -74,7 +73,7 @@ client.on('messageCreate', async (message) => {
                 const embed = new EmbedBuilder()
                 .setColor('Blue')
                 .setTitle('Ben')
-                .setDescription('Ben sagt: **HAHA**')
+                .setDescription('Ben says: **HAHA**')
 
                 message.channel.send({ embeds: [embed] })
 
@@ -84,7 +83,7 @@ client.on('messageCreate', async (message) => {
             else {
                 const embed = new EmbedBuilder()
                 .setColor('DarkRed')
-                .setDescription('## Etwas ist fehlgeschlagen!')
+                .setDescription('## An error ocurred!')
 
                 message.channel.send({ embeds: [embed] })
 
